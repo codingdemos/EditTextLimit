@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="5dp"
+  tools:context="com.codingdemos.edittextlimit.MainActivity">
+
+  <android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:counterEnabled="true"
+    app:counterMaxLength="30"
+    app:counterOverflowTextAppearance="@style/TextLimitError">
+
+    <android.support.design.widget.TextInputEditText
+      android:id="@+id/etText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/label_say_something" />
+  </android.support.design.widget.TextInputLayout>
+
+  <android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:counterEnabled="true"
+    app:counterMaxLength="30"
+    app:counterTextAppearance="@style/TextLimitStyle">
+
+    <android.support.design.widget.TextInputEditText
+      android:id="@+id/etMessage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="top"
+      android:hint="@string/label_say_something"
+      android:maxLength="30" />
+  </android.support.design.widget.TextInputLayout>
+</LinearLayout>

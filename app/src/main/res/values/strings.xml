@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">EditTextLimit</string>
+  <string name="label_say_something">Say something...</string>
+</resources>
